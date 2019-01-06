@@ -5,7 +5,20 @@
     - ``sudo yum update``
     - ``sudo yum install dotnet-sdk-2.2``
     - verify the installation was succefull by typing ``dotnet`` in the terminal
-
+2. Install Docker CE
+    - remove the previous versions of Docker if there are any(it's OK if `yum` reports that none of these packages are installed)
+``
+$ sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+``
 # Remarks
 
 # Links
