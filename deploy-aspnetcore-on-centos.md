@@ -17,11 +17,10 @@
                   docker-selinux \
                   docker-engine-selinux \
                   docker-engine``
-
-    - install required packages for installing docker ``sudo yum install -y yum-utils \
-  device-mapper-persistent-data \
-  lvm2``
+    - install required packages for installing docker ``sudo yum install -y yum-utils \ device-mapper-persistent-data \ lvm2``
     - install docker-ce ``sudo yum install docker-ce``
+    - start docker ``sudo systemctl start docker``
+    
 
     
 # Remarks
