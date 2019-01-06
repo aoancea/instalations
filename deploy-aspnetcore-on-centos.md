@@ -6,7 +6,7 @@
     - ``sudo yum install dotnet-sdk-2.2``
     - verify the installation was succefull by typing ``dotnet`` in the terminal
 2. Install Docker CE - https://docs.docker.com/install/linux/docker-ce/centos/
-    - ``sudo yum remove docker \
+    - remove the previous versions of Docker if there are any(it's OK if `yum` reports that none of these packages are installed) ``sudo yum remove docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -15,11 +15,12 @@
                   docker-logrotate \
                   docker-selinux \
                   docker-engine-selinux \
-                  docker-engine`` this will remove the previous versions of Docker if there are any(it's OK if `yum` reports that none of these packages are installed)
+                  docker-engine``
 
-    - ``sudo yum install -y yum-utils \
+    - install required packages for installing docker ``sudo yum install -y yum-utils \
   device-mapper-persistent-data \
-  lvm2`` this will install required packages for installing docker
+  lvm2``
+    - install docker-ce ``sudo yum install docker-ce``
 
     
 # Remarks
