@@ -34,3 +34,4 @@
 
 # Links
 - https://itnext.io/beginning-net-core-development-with-docker-on-linux-6595a7eebdaa
+- https://serverfault.com/questions/916941/configuring-docker-to-use-not-use-the-172-17-0-0-range
