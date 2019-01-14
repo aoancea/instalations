@@ -20,6 +20,13 @@
     - install required packages for installing docker ``sudo yum install -y yum-utils \ device-mapper-persistent-data \ lvm2``
     - install docker-ce ``sudo yum install docker-ce``
     - start docker ``sudo systemctl start docker``
+    - in case the connection drops, if you're accessing this throught a VPN, it means that the local docker virtual interface created a route that targets your same ip class that you got for your connection
+    in this case, change the ip on which docker will run and for this run following commands:
+    - ``/etc/docker/daemon.json`` - to edit this document, and hit ``i`` to start editing
+    - ``{ "default-address-pools": [ {"base":"172.30.0.0/16","size": 24} ] }``, or any other IP that you'd like
+    - now hit ``:wq`` and Enter to save this file
+    - now ``cat /etc/docker/daemon.json`` to check it was actually saved
+    
     
 
     
