@@ -31,6 +31,13 @@
     - ``docker pull mysql/mysql-server:latest``
     - ``docker run --name=mysql1 -d mysql/mysql-server:latest``
 
+4. Install MySql Benchmark - https://www.linuxhelp.com/how-to-install-mysql-workbench-on-centos-7-new
+    - ``yum install epel-release -y``
+    - ``wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm``
+    - ``yum install mysql-community-release-el7-5.noarch.rpm -y``
+    - ``yum install mysql-workbench -y``
+    - ``mysql-workbench``
+
     
 # Remarks
 
@@ -38,3 +45,4 @@
 - https://itnext.io/beginning-net-core-development-with-docker-on-linux-6595a7eebdaa
 - https://serverfault.com/questions/916941/configuring-docker-to-use-not-use-the-172-17-0-0-range
 - https://dev.mysql.com/doc/mysql-installation-excerpt/5.5/en/docker-mysql-getting-started.html
+- https://www.linuxhelp.com/how-to-install-mysql-workbench-on-centos-7-new
