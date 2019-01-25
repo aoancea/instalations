@@ -27,7 +27,9 @@
     - now hit ``:wq`` and Enter to save this file
     - now ``cat /etc/docker/daemon.json`` to check it was actually saved
     
-    
+3. Install MySql Docker - https://dev.mysql.com/doc/mysql-installation-excerpt/5.5/en/docker-mysql-getting-started.html
+    - ``docker pull mysql/mysql-server:latest``
+    - ``docker run --name=mysql1 -d mysql/mysql-server:latest``
 
     
 # Remarks
@@ -35,3 +37,4 @@
 # Links
 - https://itnext.io/beginning-net-core-development-with-docker-on-linux-6595a7eebdaa
 - https://serverfault.com/questions/916941/configuring-docker-to-use-not-use-the-172-17-0-0-range
+- https://dev.mysql.com/doc/mysql-installation-excerpt/5.5/en/docker-mysql-getting-started.html
