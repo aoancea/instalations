@@ -44,7 +44,7 @@
     - ``mysql-workbench``
 
  
- ## Other commands user
+ ## Other commands used
 chmod -R 777 core-api/
 
 dotnet publish -c release -o output
