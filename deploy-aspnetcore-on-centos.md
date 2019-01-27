@@ -29,7 +29,12 @@
     
 3. Install MySql Docker - https://dev.mysql.com/doc/mysql-installation-excerpt/5.5/en/docker-mysql-getting-started.html
     - ``docker pull mysql/mysql-server:latest``
-    - ``docker run --name=mysql1 -d mysql/mysql-server:latest``
+    - ``docker run --name mysql1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:latest`` - start container with specific pass word
+    - ``docker exec -it mysql1 mysql -uroot -p`` - enter container
+    - ``update mysql.user set host = '%' where user='root';`` - change password
+    - ``exit`` - exit container
+    - ``docker restart mysql1`` - restart container
+    - connect to MySql Workbench with the above password
 
 4. Install MySql Benchmark - https://www.linuxhelp.com/how-to-install-mysql-workbench-on-centos-7-new
     - ``yum install epel-release -y``
@@ -46,3 +51,4 @@
 - https://serverfault.com/questions/916941/configuring-docker-to-use-not-use-the-172-17-0-0-range
 - https://dev.mysql.com/doc/mysql-installation-excerpt/5.5/en/docker-mysql-getting-started.html
 - https://www.linuxhelp.com/how-to-install-mysql-workbench-on-centos-7-new
+- https://stackoverflow.com/questions/33827342/how-to-connect-mysql-workbench-to-running-mysql-inside-docker
