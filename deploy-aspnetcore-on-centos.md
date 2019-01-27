@@ -43,7 +43,17 @@
     - ``yum install mysql-workbench -y``
     - ``mysql-workbench``
 
-    
+ 
+ ## Other commands user
+chmod -R 777 core-api/
+
+dotnet publish -c release -o output
+
+dotnet run output/core-api.dll
+dotnet run output/NetCore21Angular.Client.Web.dll
+
+export ASPNETCORE_ENVIRONMENT=development
+ 
 # Remarks
 
 # Links
